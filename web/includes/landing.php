@@ -1,25 +1,20 @@
 <?include 'includes/header.php';?>
-<div class="landing_bg_section landing_hero">
+<div class="landing_hero">
     <video src="video/1.webm" autoplay loop muted></video>
     <div class="landing_headline">
         <h1>
             Integramos Inteligencia Artificial, IoT y analítica para generar eficiencia operativa, seguridad, y sostenibilidad en organizaciones y territorios
         </h1>
-        <h2>Soluciones tecnológicas que transforman datos en decisiones</h2>
     </div>
 </div>
 
+<div class="landing_content_max">
 <section id="_1" class="landing_section landing_section_1">
-    <div class="landing_visual_robot" style="display: flex; align-items: end;">
+    <div class="landing_visual_robot">
         <img src="/img/robot.png" alt="robot" id="robotImg">
     </div>
     <div class="landing_intro_layout">
         <div class="landing_panel">
-            <div class="landing_headline">
-                <h1>Tecnología simple, impacto real</h1>
-                <p>Transformamos información compleja en soluciones accionables, aplicables y con impacto medible. Trabajamos con datos, sensores, modelos y plataformas que conectan personas, procesos y decisiones</p>
-            </div>
-
             <div class="landing_pillar_blocks">
                 <div class="landing_pillar_stack">
                     <div class="landing_pillar_item">
@@ -45,10 +40,11 @@
 
 <section id="_2" class="landing_section landing_section_2">
     <div class="landing_headline">
-        <h1>Sectores principales</h1>
-        <p>Nuestras soluciones se adaptan a distintos sectores con desafíos específicos. Diseñamos estrategias tecnológicas a medida, alineadas a procesos y objetivos de cada organización.</p>
+        <p class="landing_section_2_lead">Nuestras soluciones se adaptan a distintos sectores con desafíos específicos. Diseñamos estrategias tecnológicas a medida, alineadas a procesos y objetivos de cada organización.</p>
+        <a class="landing_section_2_cta" href="#_3">Ver sectores y casos<span class="landing_section_2_cta_arrow" aria-hidden="true">→</span></a>
     </div>
 
+    <div class="landing_section_2_sliders">
     <div class="landing_sectors_slider">
         <div class="landing_sectors_slider_strip">
             <div class="landing_sectors_slider_track">
@@ -67,7 +63,7 @@
         </div>
     </div>
 
-    <div class="landing_sectors_slider landing_sectors_slider--mobile_stack">
+    <div class="landing_sectors_slider_mobile_stack">
         <div class="landing_sectors_slider">
             <div class="landing_sectors_slider_strip">
                 <div class="landing_sectors_slider_track">
@@ -98,37 +94,87 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 <section id="_3" class="landing_section landing_section_3">
     <div class="landing_panel">
         <div class="landing_headline">
-            <h1>Nuestras soluciones</h1>
-            <p>Desarrollamos productos y plataformas propias que resuelven necesidades tecnológicas concretas y se pueden implementar de forma independiente o integrada</p>
+            <p class="landing_section_3_lead">Desarrollamos productos y plataformas propias que resuelven necesidades tecnológicas concretas y se pueden implementar de forma independiente o integrada</p>
         </div>
 
-        <div class="landing_case_previews">
-            <div class="landing_case_preview landing_case_preview--spacer"></div>
-
-            <div class="landing_case_preview">
-                <div class="landing_preview_heading">
-                    <h1 class="landing_title_accent">Intelacs Energy</h1>
-                </div>
-
-                <div class="landing_preview_body">
-                    <img src="img/preview/1.jpg" alt="">
-
-                    <div class="landing_preview_aside">
-                        <p class="landing_preview_caption">
-                            Monitoreo y optimización energética
-                        </p>
-                        <button>Ver caso</button>
-                    </div>
-
+        <div class="landing_case_previews" id="landingCaseCarousel">
+            <button type="button" class="landing_case_preview--spacer landing_case_preview--spacer_next" id="landingCaseCarouselPrev" aria-label="Caso anterior"></button>
+            <div class="landing_case_previews_viewport" id="landingCaseCarouselViewport">
+                <div class="landing_case_previews_track" id="landingCaseCarouselTrack">
+                    <article class="landing_case_preview landing_case_preview--solutions">
+                        <div class="landing_preview_top">
+                            <div class="landing_preview_heading">
+                                <h2 class="landing_case_title">Smart ++</h2>
+                                <span class="landing_case_title_rule" aria-hidden="true"></span>
+                            </div>
+                            <p class="landing_preview_tagline">Monitoreo y optimización energética</p>
+                        </div>
+                        <div class="landing_preview_bottom">
+                            <img src="img/preview/1.jpg" alt="">
+                            <button type="button" class="landing_case_cta">ver caso</button>
+                        </div>
+                    </article>
+                    <article class="landing_case_preview landing_case_preview--solutions">
+                        <div class="landing_preview_top">
+                            <div class="landing_preview_heading">
+                                <h2 class="landing_case_title">Intelacs Grid</h2>
+                                <span class="landing_case_title_rule" aria-hidden="true"></span>
+                            </div>
+                            <p class="landing_preview_tagline">Supervisión distribuida de subestaciones y líneas de media tensión</p>
+                        </div>
+                        <div class="landing_preview_bottom">
+                            <img src="img/preview/1.jpg" alt="">
+                            <button type="button" class="landing_case_cta">ver caso</button>
+                        </div>
+                    </article>
+                    <article class="landing_case_preview landing_case_preview--solutions">
+                        <div class="landing_preview_top">
+                            <div class="landing_preview_heading">
+                                <h2 class="landing_case_title">PowerSense</h2>
+                                <span class="landing_case_title_rule" aria-hidden="true"></span>
+                            </div>
+                            <p class="landing_preview_tagline">Detección temprana de anomalías y picos de consumo</p>
+                        </div>
+                        <div class="landing_preview_bottom">
+                            <img src="img/preview/1.jpg" alt="">
+                            <button type="button" class="landing_case_cta">ver caso</button>
+                        </div>
+                    </article>
+                    <article class="landing_case_preview landing_case_preview--solutions">
+                        <div class="landing_preview_top">
+                            <div class="landing_preview_heading">
+                                <h2 class="landing_case_title">VoltAnalytics</h2>
+                                <span class="landing_case_title_rule" aria-hidden="true"></span>
+                            </div>
+                            <p class="landing_preview_tagline">Cuadros de mando para operación y mantenimiento en tiempo real</p>
+                        </div>
+                        <div class="landing_preview_bottom">
+                            <img src="img/preview/1.jpg" alt="">
+                            <button type="button" class="landing_case_cta">ver caso</button>
+                        </div>
+                    </article>
+                    <article class="landing_case_preview landing_case_preview--solutions">
+                        <div class="landing_preview_top">
+                            <div class="landing_preview_heading">
+                                <h2 class="landing_case_title">EcoLink</h2>
+                                <span class="landing_case_title_rule" aria-hidden="true"></span>
+                            </div>
+                            <p class="landing_preview_tagline">Integración de medición, trazabilidad y reportes de eficiencia</p>
+                        </div>
+                        <div class="landing_preview_bottom">
+                            <img src="img/preview/1.jpg" alt="">
+                            <button type="button" class="landing_case_cta">ver caso</button>
+                        </div>
+                    </article>
                 </div>
             </div>
-
-            <div class="landing_case_preview landing_case_preview--spacer"></div>
+            <button type="button" class="landing_case_preview--spacer landing_case_preview--spacer_next" id="landingCaseCarouselNext" aria-label="Siguiente caso"></button>
         </div>
     </div>
 
@@ -154,7 +200,7 @@
 
 </section>
 
-<section id="_4" class="landing_section landing_section_4 landing_bg_section">
+<section id="_4" class="landing_section landing_section_4">
     <div class="landing_process_wrap">
         <div class="landing_headline">
             <h1>Cómo trabajamos</h1>
@@ -177,7 +223,7 @@
 </section>
 
 <section id="_5" class="landing_section landing_section_5">
-    <svg class="landing_deco_circle landing_deco_circle--left" width="622" height="622" viewBox="0 0 622 622" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="landing_deco_circle_left" width="622" height="622" viewBox="0 0 622 622" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="311" cy="311" r="309" stroke="url(#paint0_linear_32_219)" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-dasharray="30 50"/>
         <defs>
         <linearGradient id="paint0_linear_32_219" x1="2" y1="311" x2="620" y2="311" gradientUnits="userSpaceOnUse">
@@ -222,7 +268,7 @@
         </div>
     </div>
 
-    <svg class="landing_deco_circle landing_deco_circle--right" width="969" height="969" viewBox="0 0 969 969" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="landing_deco_circle_right" width="969" height="969" viewBox="0 0 969 969" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="484.5" cy="484.5" r="482.5" stroke="url(#paint0_linear_40_196)" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-dasharray="30 50"/>
         <defs>
         <linearGradient id="paint0_linear_40_196" x1="2" y1="484.5" x2="967" y2="484.5" gradientUnits="userSpaceOnUse">
@@ -336,7 +382,7 @@
     </svg>
 </section>
 
-<section id="_8" class="landing_section landing_section_8 landing_bg_section">
+<section id="_8" class="landing_section landing_section_8">
    <div class="landing_panel">
         <div class="landing_headline">
             <h1>Por qué trabajar con nosotros</h1>
@@ -406,4 +452,5 @@
     </div>
     <div class="landing_footer_copyright">© SophIA - Todos los derechos reservados</div>
 </footer>
+</div>
 <script src="js/landing.js"></script>

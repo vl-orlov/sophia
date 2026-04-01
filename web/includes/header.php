@@ -1,6 +1,6 @@
 <header class="site_header">
     <div class="site_header_logo">
-        <img src="img/logo.png" alt="logo">
+        <img src="img/logo.svg" alt="logo">
     </div>
     <div class="site_header_nav_bar">
         <nav class="site_header_nav">
@@ -15,10 +15,14 @@
     </div>
     <div class="site_header_end">
         <div class="site_header_cta_wrap">
-            <button>Hablemos</button>
+            <a href="#">Hablemos</a>
         </div>
-        <button class="site_header_burger" aria-expanded="false" id="burgerRevealer">
-            <img src="img/ico/burger-closed.svg" id="burgerRevealerImg">
+        <button type="button" class="site_header_burger" id="burgerRevealer" aria-expanded="false" aria-controls="burgerMenu" aria-label="Abrir menú">
+            <span class="site_header_burger_icon" aria-hidden="true">
+                <span class="site_header_burger_line"></span>
+                <span class="site_header_burger_line"></span>
+                <span class="site_header_burger_line"></span>
+            </span>
         </button>
         <div class="site_header_drawer site_hidden" id="burgerMenu">
             <a href="#">Soluciones</a>

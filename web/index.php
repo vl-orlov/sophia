@@ -17,7 +17,9 @@
 </head>
 <body>
 
+<div class="site_shell">
 <?include 'includes/landing.php';?>
+</div>
 
 </body>
 </html>
