@@ -1,9 +1,9 @@
-<header>
-    <div class="header-logo">
+<header class="site_header">
+    <div class="site_header_logo">
         <img src="img/logo.png" alt="logo">
     </div>
-    <div class="header-center">
-        <nav>
+    <div class="site_header_nav_bar">
+        <nav class="site_header_nav">
             <a href="#">Soluciones</a>
             <a href="#">Divisiones</a>
             <a href="#">Productos & Plataformas</a>
@@ -13,14 +13,14 @@
             <a href="#">Nosotros</a>
         </nav>
     </div>
-    <div class="group-left">
-        <div class="header-contact">
+    <div class="site_header_end">
+        <div class="site_header_cta_wrap">
             <button>Hablemos</button>
         </div>
-        <button class="revealer" aria-expanded="false" id="burgerRevealer">
+        <button class="site_header_burger" aria-expanded="false" id="burgerRevealer">
             <img src="img/ico/burger-closed.svg" id="burgerRevealerImg">
         </button>
-        <div class="menu hidden" id="burgerMenu">
+        <div class="site_header_drawer site_hidden" id="burgerMenu">
             <a href="#">Soluciones</a>
             <a href="#">Divisiones</a>
             <a href="#">Productos & Plataformas</a>
@@ -31,5 +31,5 @@
         </div>
     </div>
 </header>
-<div class="backdrop hidden" id="burgerMenuBackdrop"></div>
+<div class="site_header_drawer_overlay site_hidden" id="burgerMenuBackdrop"></div>
 <script src="js/header.js"></script>
