@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
     <title>SophIA</title>
+    <link rel="icon" type="image/png" href="img/logo_icon.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo_icon.png">
+    <link rel="apple-touch-icon" href="img/logo_icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +19,7 @@
 </head>
 <body>
 
-<?include 'landing.php';?>
+<?include 'includes/landing.php';?>
 
 </body>
 </html>
