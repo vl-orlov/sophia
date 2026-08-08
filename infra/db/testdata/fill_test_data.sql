@@ -1,0 +1,1 @@
+-- Sin datos de prueba: `consultas` es contenido real de leads, no hace falta seed.

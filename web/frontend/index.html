@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia — Tecnología con propósito</title>
+    <meta
+      name="description"
+      content="SOPHIA TECH CORP: unidad de Inteligencia Artificial e innovación de Cadipel. IA, IoT, software y analítica de datos para industria, agro, fintech y seguridad."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Geist+Mono:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Import map para los módulos three.js/lil-gui que usan los scripts
+      vendored en public/vendor/ (earth-hero.js, tr-*.js) — copiados tal cual
+      del sitio original (sophia-tech-corp.vercel.app), que se resuelve así
+      mismo contra este CDN. Tiene que estar en el documento antes de que
+      cualquier módulo los importe (ver useVendorScripts.ts).
+    -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+          "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.webgpu.js",
+          "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.tsl.js",
+          "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/",
+          "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.21.0/dist/lil-gui.esm.js"
+        }
+      }
+    </script>
+
+    <!--
+      gsap + plugins y pdf.js, en el mismo orden que el sitio original.
+      SplitText (plugin Club de GSAP) se dejó afuera a propósito: en varios
+      entornos ese tag da 403 en Network y solo ensucia la consola — script.js
+      ya trata a SplitText como opcional en todos lados (typeof-guards), así
+      que sacar el <script> no cambia nada funcional, solo evita el ruido.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+web/public
+web/api/config/config.php
+web/api/config/config_prod.php
